@@ -9,4 +9,8 @@ class PagesController < ApplicationController
 
   def contact
   end
+
+  def gh_acc_news
+    @repos = SocialTool.github_search('swith')
+  end
 end

@@ -1,0 +1,18 @@
+<main role="main" class="inner cover">
+  <h1 class="cover-heading">My GitHub account Repos.</h1>
+  <div class="row">
+    <% @repos.each do |repo| %>
+      <div class='col-md-6'>
+        <div class='gh-news'>
+          <div class="card">
+            <%= repo_parser(repo) %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</main>
+
+
+
+

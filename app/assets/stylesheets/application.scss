@@ -41,7 +41,7 @@ body {
 }
 
 .cover-container {
-  max-width: 55em;
+  max-width: 65em;
 }
 
 
@@ -153,4 +153,17 @@ body {
 
 .app-footer {
   color: white;
+}
+
+.gh-news{
+  color: black;
+  margin: 10px;
+}
+
+.gh-news a{
+  color: green;
+}
+
+.gh-news > .card{
+  padding: 30px;
 }

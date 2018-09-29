@@ -40,7 +40,11 @@ module ApplicationHelper
       {
         url: portfolios_path,
         title: 'Portfolio'
-      }
+      },
+      {
+        url: github_account_news_path,
+        title: 'GitHub'
+      },
     ]
   end
 
