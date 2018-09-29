@@ -4,10 +4,18 @@ class PortfoliosController < ApplicationController
   layout "portfolio"
 
   def index
-    @portfolio_items = Portfolio.all
+    @portfolio_items = Portfolio.by_position
   end
 
   def show
+  end
+
+  def sort
+    params[:orders].each do |key, value|
+      Portfolio.find(value[:id]).update(position: value[:position])
+    end
+
+    head :ok
   end
 
   def new
