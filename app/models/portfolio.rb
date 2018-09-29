@@ -9,6 +9,8 @@ class Portfolio < ApplicationRecord
   scope :by_position, -> { order("position ASC") }
 
   after_initialize :set_defaults
+  mount_uploader :thumb_image, PortfolioUploader
+  mount_uploader :main_image, PortfolioUploader
 
   def set_defaults
     self.main_image ||= Placeholder.image_generator(height: 600, width: 400)
