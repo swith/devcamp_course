@@ -47,6 +47,8 @@ gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
 gem "mini_magick"
 gem 'carrierwave', '~> 1.0'
 gem 'carrierwave-aws'
+gem "cocoon"
+gem "gritter", "1.2.0"
 
 
 group :development, :test do
