@@ -18,5 +18,6 @@
 //= require gritter
 //= require jquery-ui
 //= require activestorage
+//= require cable
 //= require turbolinks
 //= require_tree .
